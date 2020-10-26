@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sort{
+    display: flex;
+}
+
+.sort select {
+    margin-left: auto;
+    padding: 5px;
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 500px;
+    height: 400px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    background-color: black;
+    color: lightseagreen;
+    line-height: 30px;
+    text-align: left;
+    display: block;
+}
+
+.profile button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: lightseagreen;
+    color: black;
+    cursor: pointer;
+}
+
+.profilePage {
+    padding: 10px;
+    margin-left: auto;
+}
+
+.profilePage h1 {
+    color: darkslateblue;
+}
+
+.profilePage button {
+    background-color: darkturquoise;
+    color: black;
+}
+
+ul{
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.test {
+    display: flex;
+}
+
+.test button {
+    padding: 5px;
+    background: white;
+    border: 1px solid black;;
+    margin-left: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.close, .season {
+    display: flex;
+}
+
+.season p {
+    margin-left: auto;
+}
+
+.close button {
+    margin-left: auto;
+    background-color:  white;
+    font-weight: 900;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.close p {
+    display: block;
+}
+
+.profilePage {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.profilePage button {
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+}
