@@ -30321,12 +30321,15 @@ var App = /*#__PURE__*/function (_React$Component) {
     key: "closeBox",
     value: function closeBox(num) {
       var teams = this.state.teams;
-      teams.splice(num, 1);
-      teams.map(function (obj, i) {
+      var newArr = teams.filter(function (_ref2) {
+        var i = _ref2.i;
+        return i !== num;
+      });
+      newArr.map(function (obj, i) {
         return obj.i = i;
       });
       this.setState({
-        teams: teams
+        teams: newArr
       });
     }
   }, {
@@ -30466,7 +30469,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63332" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64945" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

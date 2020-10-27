@@ -47,9 +47,9 @@ class App extends React.Component {
   }
   closeBox(num) {
     const { teams } = this.state;
-    teams.splice(num, 1);
-    teams.map((obj, i) => (obj.i = i));
-    this.setState({ teams: teams });
+    const newArr = teams.filter(({ i }) => i !== num);
+    newArr.map((obj, i) => (obj.i = i));
+    this.setState({ teams: newArr });
   }
   reloadPage() {
     location.reload();
